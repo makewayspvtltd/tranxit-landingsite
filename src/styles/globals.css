@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: UberMove;
+  src: url("./fonts/UberMove-Regular.woff") format("opentype");
+}
+@font-face {
+  font-family: Avenir;
+  src: url("./fonts/AvenirLTStd-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: Glendale;
+  src: url("./fonts/glendale-glendale-light-200.otf") format("opentype");
+}
+
+.clip-shape {
+  clip-path: polygon(48px 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 45px);
+}
+
+.move-up {
+  animation: moveUp 1s ease; /* adjust duration and easing function as needed */
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
