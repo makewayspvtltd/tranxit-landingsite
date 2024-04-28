@@ -1,4 +1,9 @@
+import DescriptionSection from "@/components/DescriptionSection/DescriptionSection";
+import FaqSection from "@/components/FaqSection/FaqSection";
+import FooterSection from "@/components/FooterSection/FooterSection";
 import Layout from "@/components/Layout/Layout";
+import WhatwedoSection from "@/components/WhatwedoSection/WhatwedoSection";
+import WorkingProcess from "@/components/WorkingProcess/WorkingProcess";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -74,6 +79,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <DescriptionSection />
+      <WhatwedoSection />
+      <WorkingProcess/>
+      <FaqSection/>
+      <FooterSection/>
     </Layout>
   );
 }
