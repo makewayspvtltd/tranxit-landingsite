@@ -46,9 +46,9 @@ function FaqSection() {
             </div>
 
 
-            <div className='flex pt-20 px-[19.25rem]  gap-36 '>
+            <div className='flex pt-20 px-[19.25rem]   '>
 
-                <div className=''>
+                <div >
                     <span className='font-Avenir font-medium text-[13px] text-[#11111080]'>
                         OUR USERS BASE
                     </span>
@@ -65,16 +65,16 @@ function FaqSection() {
 
 
 
-                <div className='flex  flex-col  gap-12 basis-[90%]'>
+                <div className='flex  flex-col  gap-12 pl-[2rem] '>
 
                     <div>
                         <span className='font-Avenir font-normal text-[18px] '>
                             Discover the industry-leading courier and logistics companies partnering with TranXIT for seamless shipping solutions.
                         </span>
                     </div>
-                    <div className=' grid grid-cols-3 gap-x-10  gap-y-12  basis[46%] justify-items-center items-center basis-[47%]'>
+                    <div className=' grid grid-cols-3 gap-x-10  gap-y-12   justify-items-center items-center'>
                         <div className='flex flex-col  h-[85px] justify-between'>
-                            <Image src={Dhl} height={12} width={90} alt="faq" className='grayscale'  />
+                            <Image src={Dhl} height={12} width={90} alt="faq" className='grayscale' />
 
                             <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
                                 DHL Logistics & Courier </span>
@@ -88,15 +88,13 @@ function FaqSection() {
                         </div>
 
                         <div className='flex flex-col h-[85px] justify-between'>
-                            <Image src={leopard} height={18} width={102.38} alt="faq"  className='grayscale'/>
+                            <Image src={leopard} height={18} width={102.38} alt="faq" className='grayscale' />
 
                             <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
                                 Leopard Courier </span>
                         </div>
-
-
                         <div className='flex flex-col h-[85px] justify-between justify-self-start'>
-                            <Image src={Tcs} height={29.89} width={76} alt="faq"  className='grayscale'/>
+                            <Image src={Tcs} height={29.89} width={76} alt="faq" className='grayscale' />
 
                             <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
                                 TCS Pakistan </span>
@@ -108,11 +106,9 @@ function FaqSection() {
                             <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
                                 Trax </span>
                         </div>
-
-
-
-
                     </div>
+
+
                 </div>
             </div>
 

@@ -19,7 +19,7 @@ function WorkingProcess() {
             </div>
 
 
-            <div className='bg-[#EFF0F1] p-5 pr-0 rounded-[8px] mt-28 flex max-h-[378px]  justify-between  gap-48 overflow-hidden flex-shrink-0'>
+            <div className='bg-[#EFF0F1] p-5 pr-0 rounded-[8px] mt-28 flex max-h-[378px]  justify-between  gap-64 overflow-hidden flex-shrink-0'>
                 <span className='basis-[60%] flex flex-col gap-12'>
                     <span className='font-Avenir font-normal text-[18px] leading-7 text-[#11111 min-w-[430px]'>
                         TranXIT's bidding system lets courier companies silently compete for job requests. Users pick the best bid for their needs, all done quietly and efficiently. TranXIT ensures fair competition and optimal pricing, making shipping hassle-free for all parties involved.
@@ -34,8 +34,8 @@ function WorkingProcess() {
                     </div>
                 </span>
 
-                <div className='pt-[22px] '>
-                    <Image src={Drawer} alt="drawer" quality={100} className='border-t-[7px] border-l-[7px] min-w-[980px] border-[#00000026] rounded-[12px]' />
+                <div className='pt-12 '>
+                    <Image src={Drawer} alt="drawer" quality={100}  className='border-t-[7px] border-l-[7px] w-[700px]  border-[#00000026] rounded-[12px] scale-125' />
 
 
                 </div>
@@ -80,7 +80,7 @@ function WorkingProcess() {
                     </div>
                 </span>
 
-                <div className='pt-[22px] flex justify-center max-w-[633px] '>
+                <div className='pt-[22px] flex justify-center max-w-[370px] '>
                     <Image src={mobile} alt="chart"  quality={100} className='max-w-[950px] scale-90' />
 
 

@@ -6,8 +6,8 @@ import laptop2 from "./Assets/digitalbanks-laptop2.png"
 
 function WhatwedoSection() {
   return (
-    <div className="z-20 bg-[#FFFFFF] h-[210vh] ">
-      <div className='bg-[#242423] z-10 w-[300px] h-[210vh] absolute right-0'></div>
+    <div className="z-20 bg-[#FFFFFF] h-[200vh] ">
+      <div className='bg-[#242423] z-10 w-[300px] h-[200vh] absolute right-0'></div>
       <div className='absolute right-40 z-0'>
         <Image src={rings} alt="rings" width={1009}  className='h-[200vh]'/>
       </div>
@@ -28,7 +28,7 @@ function WhatwedoSection() {
 
 
               <div className='z-10'>
-                <Image src={laptop} alt="laptop image" className='rounded-[12px] min-w-[974px] min-h-[823px]' />
+                <Image src={laptop} alt="laptop image" className='rounded-[12px] min-w-[855px] min-h-[700px]' />
 
               </div>
             </div>
@@ -60,7 +60,7 @@ function WhatwedoSection() {
 
 
                 <div className='z-10'>
-                  <Image src={laptop2} alt="laptop image" className='rounded-[12px] min-w-[974px] min-h-[823px]' />
+                  <Image src={laptop2} alt="laptop image" className='rounded-[12px] min-w-[855px] min-h-[700px]' />
 
                 </div>
               </div>
