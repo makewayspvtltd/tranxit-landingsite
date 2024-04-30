@@ -7,12 +7,10 @@ import WhatwedoSection from "@/components/WhatwedoSection/WhatwedoSection";
 import WorkingProcess from "@/components/WorkingProcess/WorkingProcess";
 import HowWeOperateSection2 from "@/components/HowWeOperate/HowWeOperate.section.2";
 import Main from "@/components/Main/Main";
-import SnapScroll from "@/components/snapscroll/snapscroll";
 
 export default function Home() {
   return (
     <Layout>
-      <SnapScroll/>
       <Main />
       <DescriptionSection />
 
