@@ -81,7 +81,7 @@ function WorkingProcess() {
                 </span>
 
                 <div className='pt-[22px] flex justify-center max-w-[370px] '>
-                    <Image src={mobile} alt="chart"  quality={100} className='max-w-[950px] scale-90' />
+                    <Image src={mobile} alt="chart"  quality={100} className='max-w-[950px] scale-95' />
 
 
                 </div>

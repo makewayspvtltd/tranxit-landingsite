@@ -25,7 +25,7 @@ function Main() {
             Your ultimate logistics and freight management solution. Streamline operations, optimize routes, and track shipments in real-time with our comprehensive platform. Sign up now for seamless logistics management, absolutely free!
           </div>
           <div>
-            <div className="flex flex-col lg:flex-row gap-3 mt-20">
+            <div className="flex flex-col lg:flex-row gap-3 mt-11">
               <button className="flex items-center justify-center rounded-lg bg-Primary py-[18px] px-[52px] font-UberMove font-extrabold text-lg leading-7">
                 <Image src="/arrowleft.svg" alt="arrow" width={27} height={27} />
                 Request Delivery
@@ -35,16 +35,16 @@ function Main() {
                 Own a Company?
               </button>
             </div>
-            <p className="text-sm mt-5 text-[#11111080] font-Avenir font-normal text-left leading-7">
+            <p className="text-sm mt-5 text-[#11111080] font-Avenir font-normal text-left leading-7 mb-6">
               No charges apply. Signing up and requesting delivery is completely free.
             </p>
           </div>
         </div>
-        <div className="mt-10 w-full h-full">
-          <Image src="/truck.png" alt="Hero" layout='responsive' width={0} height={0}/>
-        </div>
+        <div className="hidden md:block mt-10 w-full h-full">
+    <Image src="/truck.png" alt="Hero" layout='responsive' width={0} height={0}/>
+</div>
       </div>
-      <div className="flex ml-[16%] lg:flex-row justify-between bg-white mt-auto py-14 px-10 clip-shape">
+      <div className="flex ml-[16%] lg:flex-row justify-between bg-white mt-auto py-11 px-10 clip-shape">
         <FeatureItem imageSrc="/powerbid.svg" title="Powerful Bid System" description="TranXIT's bid system revolutionizes courier job requests for optimal pricing, a power in your hands" />
         <FeatureItem imageSrc="/costeffi.svg" title="Cost Efficiency" description="Automates processes, optimizes routes, reduces logistics costs effectively" />
         <FeatureItem imageSrc="/enhanced.svg" title="Enhanced Customer Experience" description="Enhances customer experience with real-time tracking" />
