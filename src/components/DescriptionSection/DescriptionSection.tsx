@@ -49,7 +49,7 @@ function DescriptionSection() {
         // sectionObserver.unobserve(sectionRef.current);
       }
     };
-  }, []);
+  }, [controls]);
 
   return (
     <div className="relative">
