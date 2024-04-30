@@ -6,7 +6,7 @@ function DescriptionSection() {
     return (
         <div className='relative'>
 
-            <div className='py-[90px] px-[54px] relative h-screen '>
+            <div className='py-[90px] px-[54px] relative h-screen'>
                 <div className='absolute inset-0 flex items-center justify-center '>
                     <Image src={circle} alt="circle" width={1770} />
                 </div>
