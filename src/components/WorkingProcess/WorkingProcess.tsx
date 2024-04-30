@@ -22,7 +22,7 @@ function WorkingProcess() {
             <div className='bg-[#EFF0F1] p-5 pr-0 rounded-[8px] mt-28 flex max-h-[378px]  justify-between  gap-64 overflow-hidden flex-shrink-0'>
                 <span className='basis-[60%] flex flex-col gap-12'>
                     <span className='font-Avenir font-normal text-[18px] leading-7 text-[#11111 min-w-[430px]'>
-                        TranXIT's bidding system lets courier companies silently compete for job requests. Users pick the best bid for their needs, all done quietly and efficiently. TranXIT ensures fair competition and optimal pricing, making shipping hassle-free for all parties involved.
+                        TranXIT&apos;s bidding system lets courier companies silently compete for job requests. Users pick the best bid for their needs, all done quietly and efficiently. TranXIT ensures fair competition and optimal pricing, making shipping hassle-free for all parties involved.
                     </span>
 
                     <div className='flex  gap-4'>

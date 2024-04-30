@@ -32,10 +32,9 @@ function FaqSection() {
                         Frequently asked questions
                     </h3>
                     <div className='pt-8'>
-
                         {accordionData.map((data, index) => (
                             <DynamicAccordion
-
+                                key={index} // Add a unique "key" prop
                                 question={data.question}
                                 answer={data.anwser}
                             />
