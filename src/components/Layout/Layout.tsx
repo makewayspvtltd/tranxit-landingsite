@@ -5,7 +5,14 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Navbar />
-      <div>{children}</div>
+      <meta name="viewport" content={"width=1200"} />
+
+      <div className="content">{children}</div>
+      <style jsx>{`
+        .content {
+          padding-top: 70px; // Adjust this value according to the height of your navbar
+        }
+      `}</style>
     </div>
   );
 }

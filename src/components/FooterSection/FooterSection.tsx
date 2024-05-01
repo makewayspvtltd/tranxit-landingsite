@@ -9,10 +9,10 @@ function FooterSection() {
     return (
         <div className='relative'>
             <div className='overflow-hidden relative h-[600px]'>
-                <Image src={Truck} alt="truck" layout='fill' objectFit='cover' objectPosition='center 85 %' className='grayscale' />
+                <Image src={Truck} alt="truck" layout='fill' objectFit='cover' objectPosition='center 85%' className='grayscale' />
             </div>
 
-            <div className='flex absolute top-[22.3125rem] right-[19.25rem]'>
+            <div className='flex absolute top-[22.4rem] right-[19.25rem]'>
                 <div className='bg-[#0067F0] py-10 pl-12 pr-[6.6rem] max-w-[316px] '>
 
                     <div className='flex gap-1'>

@@ -28,7 +28,7 @@ function WhatwedoSection() {
 
 
               <div className='z-10'>
-                <Image src={laptop} alt="laptop image" className='rounded-[12px] min-w-[855px] min-h-[700px]' />
+                <Image src={laptop} alt="laptop image"  layout='responsive' className='rounded-[12px]' />
 
               </div>
             </div>
@@ -60,7 +60,7 @@ function WhatwedoSection() {
 
 
                 <div className='z-10'>
-                  <Image src={laptop2} alt="laptop image" className='rounded-[12px] min-w-[855px] min-h-[700px]' />
+                  <Image src={laptop2} alt="laptop image"  layout='responsive' className='rounded-[12px] ' />
 
                 </div>
               </div>

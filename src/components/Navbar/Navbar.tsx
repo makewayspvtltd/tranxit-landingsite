@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import MenuIcon from "./Assets/MenuIcon";
 import logo from "./Assets/Logo.svg";
@@ -12,6 +12,26 @@ interface NavLinkProps {
 }
 
 const Navbar: React.FC = () => {
+  const [isFloating, setIsFloating] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const shouldFloat = scrollTop > 0; // Change this condition based on your requirements
+      setIsFloating(shouldFloat);
+      if (shouldFloat) {
+        document.body.style.overflowX = "hidden";
+      } else {
+        document.body.style.overflowX = "";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
     return (
       <Link href={href} className="font-UberMove focus:font-bold">
@@ -21,7 +41,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between px-4 bg-white">
+    <nav
+      className={`flex fixed items-center w-full justify-between px-4 bg-white ${
+        isFloating ? "floating" : ""
+      }`}
+    >
       <div className="flex items-center">
         <div className="flex items-center">
           <button
