@@ -8,17 +8,17 @@ function HowWeOperate() {
     <div className="flex flex-col bg-[#111110] text-white h-screen">
       <div className="flex pt-20 pl-[16%] gap-40">
         <div>
-          <div className="font-Avenir font-medium text-[13px] py-4 border-b border-[#60606B] text-[#FFFFFFBF] ">
+          <div className="font-Avenir font-medium text-[13px] pb-4 border-b border-[#60606B] text-[#FFFFFFBF] ">
             HOW WE OPERATE
           </div>
-          <div className="font-UberMove font-bold text-[40px] mt-4 ">
+          <div className="font-UberMoveBold text-[40px] mt-4 ">
             TranXIT platform is providing <br />
             for a diverse range of <br />
             services at your disposal
           </div>
         </div>
 
-        <div className="font-Avenir font-normal text-base text-[#FFFFFFBF] ">
+        <div className="font-Avenir font-normal text-base text-white text-opacity-60  leading-7">
           TranXIT offers a comprehensive suite of logistics and courier
           services, covering a wide <br /> range of areas including freight
           forwarding, inventory management, route optimization, <br /> real-time

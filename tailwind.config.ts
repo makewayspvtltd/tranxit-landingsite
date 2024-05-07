@@ -17,6 +17,7 @@ const config: Config = {
       
       colors: {
         Primary: "#BFF000",
+        textPrimary:"#111110",
         Secondary:"#AFAFAE",
       },
       borderColor: {
@@ -27,6 +28,12 @@ const config: Config = {
         UberMoveBold:"UberMoveBold",
         Glendale: "Glendale",
         Avenir: "Avenir",
+        UberMoveRegular:"UberMoveRegular",
+        UberMoveLight:"UberMoveLight",
+        Glendalebold:"Glendalebold",
+        Avenirbold:"Avenirbold",
+        UberMoveMedium:"UberMoveMedium",
+        AvenirRoman:"AvenirRoman",
       },
     },
   },

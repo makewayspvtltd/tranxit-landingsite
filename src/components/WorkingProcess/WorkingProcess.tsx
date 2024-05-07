@@ -9,11 +9,11 @@ function WorkingProcess() {
         <div className='flex px-[20.6875rem] py-32 flex-col '>
 
             <div className='flex justify-between gap-14'>
-                <span className='font-Avenir font-normal text-[18px] leading-7 text-[#111110]'>
+                <span className='font-AvenirRoman font-normal text-[18px] leading-7 text-[#111110]'>
                     TranXIT facilitates connections between companies and their customers, rather than serving as a freight forwarder. </span>
 
 
-                <span className='font-Avenir font-normal text-[18px] leading-7 text-[#11111'>
+                <span className='font-AvenirRoman font-normal text-[18px] leading-7 text-[#11111'>
                     TranXIT serves as a dynamic portal, connecting businesses and customers in the realm of logistics and freight forwarding. Through our intuitive platform, users gain access to a seamless experience, facilitating everything from job requests and bidding to real-time tracking and communication.
                 </span>
             </div>
@@ -21,7 +21,7 @@ function WorkingProcess() {
 
             <div className='bg-[#EFF0F1] p-5 pr-0 rounded-[8px] mt-28 flex max-h-[378px]  justify-between  gap-64 overflow-hidden flex-shrink-0'>
                 <span className='basis-[60%] flex flex-col gap-12'>
-                    <span className='font-Avenir font-normal text-[18px] leading-7 text-[#11111 min-w-[430px]'>
+                    <span className='font-AvenirRoman font-normal text-[18px] leading-7 text-[#11111 min-w-[430px]'>
                         TranXIT&apos;s bidding system lets courier companies silently compete for job requests. Users pick the best bid for their needs, all done quietly and efficiently. TranXIT ensures fair competition and optimal pricing, making shipping hassle-free for all parties involved.
                     </span>
 
@@ -44,7 +44,7 @@ function WorkingProcess() {
            <div className='flex gap-8 '>
            <div className='bg-[#EFF0F1] p-5 pb-0 pr-0 rounded-[8px] mt-[2rem] flex  justify-between max-h-[844px]  gap-36  flex-shrink-0 flex-col basis-[50%]'>
                 <span className=' flex flex-col gap-12 '>
-                    <span className='font-Avenir font-normal text-[18px] leading-7 text-[#11111 min-w-[430px] basis-7 w-1'>
+                    <span className='font-AvenirRoman font-normal text-[18px] leading-7 text-[#11111 min-w-[430px] basis-7 w-1'>
 
                     Keep a record of your earning as a Courier or Logistics admin and maintain a record of your customers and offerings.
                     </span>
@@ -67,7 +67,7 @@ function WorkingProcess() {
 
             <div className='bg-[#EFF0F1] p-5 pb-0 pr-0 rounded-[8px] mt-[2rem] flex  justify-between  gap-36 max-h-[844px]   flex-col  max-w-[635px]  overflow-hidden basis-[50%]'>
                 <span className=' flex flex-col gap-12 '>
-                    <span className='font-Avenir font-normal text-[18px] leading-7 text-[#11111 min-w-[430px] basis-7 w-1'>
+                    <span className='font-AvenirRoman font-normal text-[18px] leading-7 text-[#11111 min-w-[430px] basis-7 w-1'>
 
                     TranXIT mobile app offers convenient access to our comprehensive logistics platform, empowering users to manage shipments and track deliveries on-the-go with ease.                    </span>
 

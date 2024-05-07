@@ -35,9 +35,9 @@ export default function Home() {
   return (
     
     <Layout>
-      <motion.div ref={targetMain} style={{ opacity: opacityMain }}>
+      {/* <motion.div ref={targetMain} style={{ opacity: opacityMain }}> */}
         <Main />
-      </motion.div>
+      {/* </motion.div> */}
       <motion.div ref={targetDescription} style={{ opacity: opacityDescription }}>
         <DescriptionSection />
       </motion.div>

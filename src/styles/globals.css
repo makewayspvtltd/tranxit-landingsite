@@ -171,14 +171,45 @@
   font-family: Avenir;
   src: url("./fonts/AvenirLTStd-Book.otf") format("opentype");
 }
+
+
+@font-face {
+  font-family: Avenirbold;
+  src: url("./fonts/AvenirLTStd-Black 2.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvenirRoman;
+  src: url("./fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
 @font-face {
   font-family: Glendale;
   src: url("./fonts/glendale-glendale-light-200.otf") format("opentype");
 }
 
 @font-face {
+  font-family: Glendalebold;
+  src: url("./fonts/glendale-glendale-bold-700.otf") format("opentype");
+}
+
+@font-face {
   font-family: UberMoveBold;
   src: url("./fonts/UberMove-Bold.woff") format("opentype");
+}
+
+@font-face {
+  font-family: UberMoveRegular;
+  src: url("./fonts/UberMove-Regular.woff") format("opentype");
+}
+
+@font-face {
+  font-family: UberMoveLight;
+  src: url("./fonts/UberMove-Light.woff") format("opentype");
+}
+
+@font-face {
+  font-family: UberMoveMedium;
+  src: url("./fonts/UberMove-Medium.woff") format("opentype");
 }
 
 .clip-shape {
@@ -250,4 +281,7 @@
   margin-left: 10px;
   margin-right: 10px;
 
+}
+.main-section {
+  border-radius: 54px 54px 6px 6px;
 }
