@@ -6,7 +6,7 @@ import ContentCard from '../ContentCard/ContentCard';
 
 function WhatwedoSection() {
   const [activeCard, setActiveCard] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 for top to bottom, -1 for bottom to top
+  const [direction, setDirection] = useState(1);
   const cards = [
     {
       heading: "Power to deliver with your choice",

@@ -1,56 +1,70 @@
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from 'react';
+import { motion } from "framer-motion";
+import Main from "@/components/Main/Main";
 import DescriptionSection from "@/components/DescriptionSection/DescriptionSection";
+import WhatwedoSection from "@/components/WhatwedoSection/WhatwedoSection";
+import HowWeOperate from "@/components/HowWeOperate/HowWeOperate.section.1";
+import HowWeOperateSection2 from "@/components/HowWeOperate/HowWeOperate.section.2";
+import WorkingProcess from "@/components/WorkingProcess/WorkingProcess";
 import FaqSection from "@/components/FaqSection/FaqSection";
 import FooterSection from "@/components/FooterSection/FooterSection";
-import HowWeOperate from "@/components/HowWeOperate/HowWeOperate.section.1";
-import Layout from "@/components/Layout/Layout";
-import WhatwedoSection from "@/components/WhatwedoSection/WhatwedoSection";
-import WorkingProcess from "@/components/WorkingProcess/WorkingProcess";
-import HowWeOperateSection2 from "@/components/HowWeOperate/HowWeOperate.section.2";
-import Main from "@/components/Main/Main";
 
 export default function Home() {
-  const targetMain = useRef(null);
-  const targetDescription = useRef(null);
+  const [snapScroll, setSnapScroll] = React.useState(true);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress: scrollProgressMain } = useScroll({ target: targetMain });
-  const { scrollYProgress: scrollProgressDescription } = useScroll({ target: targetDescription });
+  console.log(snapScroll)
+  function getOffsetTop(element: HTMLElement) {
+    let offsetTop = 0;
+    while (element) {
+      offsetTop += element.offsetTop;
+      element = element.offsetParent as HTMLElement;
+    }
+    return offsetTop;
+  }
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          setSnapScroll(false);
+        } else {
+          setSnapScroll(true);
+        }
+      }
+    };
 
+    window.addEventListener('scroll', handleScroll);
 
-  const smoothedMain = useSpring(scrollProgressMain, {
-    damping: 10,
-    stiffness: 30,
-    restDelta: 0.1
-  });
-  const smoothedDescription = useSpring(scrollProgressDescription, {
-    damping: 10,
-    stiffness: 30,
-    restDelta: 0.1
-  });
-
-  const opacityMain = useTransform(smoothedMain, [0, 1], [0, 1]);
-  const opacityDescription = useTransform(smoothedDescription, [0, 1], [0, 1]);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [setSnapScroll]);
 
   return (
-    
-    <Layout>
-      {/* <motion.div ref={targetMain} style={{ opacity: opacityMain }}> */}
+    <div className={`container ${snapScroll ? 'h-screen' : 'h-auto'}`}>
+      <motion.div className="snap-section">
         <Main />
-      {/* </motion.div> */}
-      <motion.div ref={targetDescription} style={{ opacity: opacityDescription }}>
+      </motion.div>
+      <motion.div className="snap-section">
         <DescriptionSection />
       </motion.div>
-
-
-
+      <div className="snap-section">
         <WhatwedoSection />
+      </div>
+      <div className="snap-section">
         <HowWeOperate />
+      </div>
+      <div className="snap-section" ref={sectionRef}>
         <HowWeOperateSection2 />
+      </div>
+      <div className="non-snap-section">
         <WorkingProcess />
+      </div>
+      <div className="non-snap-section">
         <FaqSection />
+      </div>
+      <div className="non-snap-section">
         <FooterSection />
-
-    </Layout>
+      </div>
+    </div>
   );
 }

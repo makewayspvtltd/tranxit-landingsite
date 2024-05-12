@@ -12,7 +12,7 @@ import Play from "./Assets/play.svg"
 import DynamicAccordion from '../Accordion/Accordion-component'
 function FaqSection() {
     return (
-        <div className='pt-[8.25rem] pb-[6.125rem]'>
+        <div className='pt-[8.25rem] pb-[6.125rem] h-full'>
             <div className='flex'>
                 <div className='basis-[50%] bg-white  py-24 overflow-hidden'>
                     <Image src={Faq} alt="faq" className='w-[100%] scale-110 ' />

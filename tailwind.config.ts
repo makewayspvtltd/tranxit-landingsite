@@ -9,7 +9,7 @@ const config: Config = {
   ],
 
   presets: [
-    require('@heathmont/moon-core-tw/lib/private/presets/ds-moon-preset'),
+    require("@heathmont/moon-core-tw/lib/private/presets/ds-moon-preset"),
   ],
   theme: {
     extend: {
@@ -18,27 +18,27 @@ const config: Config = {
         tablet: "768px", // Adjusted from 1024px
         laptop: "1024px", // Adjusted from 1280px
         desktop: "1440px", // New breakpoint for desktop
-        'giant-screen': "1920px", // Adjusted from 1536px
+        "giant-screen": "1920px", // Adjusted from 1536px
       },
       colors: {
         Primary: "#BFF000",
-        textPrimary:"#111110",
-        Secondary:"#AFAFAE",
+        textPrimary: "#111110",
+        Secondary: "#AFAFAE",
       },
       borderColor: {
         Primary: "#AFAFAE",
       },
       fontFamily: {
         UberMove: "UberMove",
-        UberMoveBold:"UberMoveBold",
+        UberMoveBold: "UberMoveBold",
         Glendale: "Glendale",
         Avenir: "Avenir",
-        UberMoveRegular:"UberMoveRegular",
-        UberMoveLight:"UberMoveLight",
-        Glendalebold:"Glendalebold",
-        Avenirbold:"Avenirbold",
-        UberMoveMedium:"UberMoveMedium",
-        AvenirRoman:"AvenirRoman",
+        UberMoveRegular: "UberMoveRegular",
+        UberMoveLight: "UberMoveLight",
+        Glendalebold: "Glendalebold",
+        Avenirbold: "Avenirbold",
+        UberMoveMedium: "UberMoveMedium",
+        AvenirRoman: "AvenirRoman",
       },
     },
   },

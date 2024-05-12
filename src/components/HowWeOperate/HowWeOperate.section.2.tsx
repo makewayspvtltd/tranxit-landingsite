@@ -2,7 +2,7 @@ import React from "react";
 
 function HowWeOperateSection2() {
   return (
-    <div className="bg-[#111110] min-h-screen flex flex-col relative">
+    <div className="bg-[#111110] min-h-screen flex flex-col relative" >
       <img src="/waves.svg" alt="www1" className="absolute left-0 z-[-10px]" />
 
       {/* content */}
@@ -22,22 +22,22 @@ function HowWeOperateSection2() {
 
           <div className="flex gap-14 mt-32 text-[#FFFFFF]">
             <div className="flex gap-6">
-           <div className="pt-2">
-           <img src="/half-circles.svg" width={36} alt="www1" height={36} />
-           </div>
+              <div className="pt-2">
+                <img src="/half-circles.svg" width={36} alt="www1" height={36} />
+              </div>
               <div className="max-w-[360px]">
-                TranXIT&apos;s innovative bidding system for courier 
-                job requests ensures fair competition and optimal 
+                TranXIT&apos;s innovative bidding system for courier
+                job requests ensures fair competition and optimal
                 pricing for all shipments.
               </div>
             </div>
 
-            <div className="flex gap-6"> 
-              <div  className="pt-2">
-              <img src="/half-ciclesv2.svg" alt="www1" width={36} height={36} />
+            <div className="flex gap-6">
+              <div className="pt-2">
+                <img src="/half-ciclesv2.svg" alt="www1" width={36} height={36} />
               </div>
               <div className="max-w-[360px]">
-              As a web-based system, the platform provides seamless tracking which helps customers to track their packages worldwide with our partners.
+                As a web-based system, the platform provides seamless tracking which helps customers to track their packages worldwide with our partners.
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ function HowWeOperateSection2() {
           service.
         </p>
         <div className="bg-Primary text-[#111110] pt-6 pl-[26px] pr-28 ">
-          <p className="font-UberMoveLight text-5xl pr-24 font-light">
+          <p className="font-UberMoveLight text-5xl  font-light">
             <span className="font-UberMoveBold">Join TranXIT&apos;s</span> courier network
             today and unlock <br /> a world of streamlined operations and
             enhanced <br /> efficiency through a single window.

@@ -7,7 +7,7 @@ import diamondRing from "./Assets/small-diamond.svg"
 import logo from "./Assets/logo.png"
 function FooterSection() {
     return (
-        <div className='relative'>
+        <div className='relative h-full'>
             <div className='overflow-hidden relative h-[600px]'>
                 <Image src={Truck} alt="truck" layout='fill' objectFit='cover' objectPosition='center 85%' className='grayscale' />
             </div>

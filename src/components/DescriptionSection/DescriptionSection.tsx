@@ -58,7 +58,7 @@ function DescriptionSection() {
       </div>
       <motion.div
         ref={sectionRef}
-        className="py-[90px] px-[54px] relative h-screen"
+        className="px-[54px] relative h-screen"
         initial={{ opacity: 0, y: -100 }}
         animate={controls}
         transition={{ delay: 0.3, duration: 0.3 }}
