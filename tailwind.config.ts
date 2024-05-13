@@ -13,6 +13,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        custom: "calc(100vh - 72px)",
+      },
       screens: {
         mobile: "370px",
         tablet: "768px", // Adjusted from 1024px

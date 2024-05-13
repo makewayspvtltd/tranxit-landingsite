@@ -28,7 +28,7 @@ function Main() {
   return (
     < div className='h-screen' ref={mainRef}>
       <Navbar isFloating={isFloating} />
-      <div className="mx-3 flex flex-col rounded-t-[54px] rounded-b-md bg-gradient-to-r from-[#EAEAEA] via-[#EAEAEA] via-85% to-Primary to-50%">
+      <div className="mx-3 flex flex-col rounded-t-[54px] rounded-b-md bg-gradient-to-r from-[#EAEAEA] via-[#EAEAEA] via-85% to-Primary to-50% h-custom justify-between" >
         <div className="flex flex-row items-center justify-between">
           <div className="text flex-1 p-4 lg:mt-32 lg:ml-72">
             <div>

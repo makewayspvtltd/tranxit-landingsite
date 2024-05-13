@@ -286,7 +286,7 @@
   border-radius: 54px 54px 6px 6px;
 }
 
-.container {
+/* .container {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -297,5 +297,6 @@
 }
 
 .non-snap-section {
-  /* Remove the height constraint */
-}
+  overflow-y: auto;
+  scroll-snap-align: none;
+} */
