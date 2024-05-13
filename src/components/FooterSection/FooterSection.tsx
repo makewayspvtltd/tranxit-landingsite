@@ -7,7 +7,7 @@ import diamondRing from "./Assets/small-diamond.svg"
 import logo from "./Assets/logo.png"
 function FooterSection() {
     return (
-        <div className='relative'>
+        <div className='relative h-full'>
             <div className='overflow-hidden relative h-[600px]'>
                 <Image src={Truck} alt="truck" layout='fill' objectFit='cover' objectPosition='center 85%' className='grayscale' />
             </div>
@@ -49,10 +49,10 @@ function FooterSection() {
                             Get started with Tranxit today
                         </span>
 
-                        <h2 className='font-bold text-white text-[2.3rem] pt-[1rem]'>
+                        <h2 className='font-bold font-dm-sans text-white text-[2.3rem] pt-[1rem]'>
                             Hop in!
                         </h2>
-                        <div className="font-bold text-white text-[2.3rem]">
+                        <div className="font-bold font-dm-sans text-white text-[2.3rem]">
                             Get set shipping.
                         </div>
 
@@ -68,7 +68,7 @@ function FooterSection() {
                     </div>
                 </div>
 
-                <span className='font-Avenir font-medium text-[1rem] text-[#91929B] max-w-[861px] '>
+                <span className='font-AvenirRoman font-medium text-[1rem] text-[#91929B] max-w-[861px] '>
                     Join TranXIT today and experience streamlined logistics management, optimized freight forwarding, and seamless courier services. Simplify your shipping processes with TranXIT – your ultimate logistics partner.
                 </span>
             </div>
@@ -91,19 +91,19 @@ function FooterSection() {
                     </h5>
 
                     <div className='flex flex-col gap-3 pt-6 '>
-                        <p className='text-opacity-50  font-Avenir text-white'>
+                        <p className='text-opacity-50  font-AvenirRoman text-white'>
                             About
                         </p>
-                        <p className='text-opacity-50  font-Avenir text-white'>
+                        <p className='text-opacity-50 font-AvenirRoman text-white'>
                             Explore Features
                         </p>
-                        <p className='text-opacity-50  font-Avenir text-white'>
+                        <p className='text-opacity-50  font-AvenirRoman text-white'>
                             Understanding TranXIT
                         </p>
-                        <p className='text-opacity-50  font-Avenir text-white'>
+                        <p className='text-opacity-50  font-AvenirRoman text-white'>
                             Our Partners
                         </p>
-                        <p className='text-opacity-50  font-Avenir text-white'>
+                        <p className='text-opacity-50  font-AvenirRoman  text-white'>
                             Contact
                         </p>
                     </div>
@@ -117,10 +117,10 @@ function FooterSection() {
                         </h5>
 
 
-                        <p className='text-opacity-50  font-Avenir text-white pt-6'>
+                        <p className='text-opacity-50  font-AvenirRoman  text-white pt-6'>
                             Let us know what you are facing at
                         </p>
-                        <p className='font-Avenir text-[1rem] underline text-Primary'>
+                        <p className='font-AvenirRoman text-[1rem] underline text-Primary'>
                             support@tranxit.io
                         </p>
                     </div>
@@ -132,11 +132,11 @@ function FooterSection() {
                         </h5>
 
 
-                        <p className='text-opacity-50  font-Avenir text-white pt-6'>
+                        <p className='text-opacity-50  font-AvenirRoman text-white pt-6'>
                             Looking for a job opportunity?
 
                         </p>
-                        <p className='text-opacity-50  font-Avenir text-white'>
+                        <p className='text-opacity-50  font-AvenirRoman text-white'>
                             See open positions
                         </p>
 
@@ -172,7 +172,7 @@ function FooterSection() {
                                 <input id="checkbox" type="checkbox" className="rounded-checkbox"
                                 />
                             </div>
-                            <p className='text-opacity-50  font-Avenir font-normal text-white leading-7 text-base'>
+                            <p className='text-opacity-50  font-AvenirRoman  font-normal text-white leading-7 text-base'>
                                 I’m okay with getting emails and having that activity tracked to improve my experience.
 
                             </p>
@@ -187,33 +187,33 @@ function FooterSection() {
 
             <div className='px-[19.25rem]  bg-[#242423]'>
 
-               <div className='border-t border-[#E7E8E41F] flex justify-between items-center'>
-               <div>
-               <p className='text-[13px] font-Avenir font-medium text-white py-9 opacity-75'>
-                    © 2024 TRABXIT. All RIGHTS RESERVED, PRODUCT OF  <span className='text-Primary'>
-                        MAKEWAYS
-                    </span>
-                </p>
-               </div>
+                <div className='border-t border-[#E7E8E41F] flex justify-between items-center'>
+                    <div>
+                        <p className='text-[13px] font-Avenir  text-white py-9 opacity-75'>
+                            © 2024 TRABXIT. All RIGHTS RESERVED, PRODUCT OF  <span className='text-Primary'>
+                                MAKEWAYS
+                            </span>
+                        </p>
+                    </div>
 
-                <div className='flex gap-[2rem] text-[13px] '>
+                    <div className='flex gap-[2rem] text-[13px] font-Avenir font-medium '>
 
 
-                    <span className='text-opacity-50  font-Avenir font-normal text-white leading-7 '>
-                        SITEMAP
-                    </span>
-                    <span className='text-opacity-50  font-Avenir font-normal text-white leading-7 '>
-                     SECURITY
-                    </span>
-                    <span className='text-opacity-50  font-Avenir font-normal text-white leading-7 '>
-                        PRIVACY POLICY
-                    </span>
-                    <span className='text-opacity-50  font-Avenir font-normal text-white leading-7 '>
-                        TERMS OF SERVICE
-                    </span> 
+                        <span className='text-opacity-50    text-white leading-7 '>
+                            SITEMAP
+                        </span>
+                        <span className='text-opacity-50     text-white leading-7 '>
+                            SECURITY
+                        </span>
+                        <span className='text-opacity-50   text-white leading-7 '>
+                            PRIVACY POLICY
+                        </span>
+                        <span className='text-opacity-50    text-white leading-7 '>
+                            TERMS OF SERVICE
+                        </span>
 
+                    </div>
                 </div>
-               </div>
             </div>
 
 

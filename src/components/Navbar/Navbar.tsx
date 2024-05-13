@@ -1,40 +1,29 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import MenuIcon from "./Assets/MenuIcon";
 import logo from "./Assets/Logo.svg";
 import Image from "next/image";
 import support from "./Assets/Support.svg";
 import loginIcon from "./Assets/Login.svg";
 
+interface NavbarProps {
+  isFloating: boolean;
+}
+
 interface NavLinkProps {
   href: string;
   children: React.ReactNode; // Specify the type of children prop
+
 }
 
-const Navbar: React.FC = () => {
-  const [isFloating, setIsFloating] = useState(false);
+const Navbar: React.FC<NavbarProps> = ({ isFloating }) => {
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const shouldFloat = scrollTop > 0; // Change this condition based on your requirements
-      setIsFloating(shouldFloat);
-      if (shouldFloat) {
-        document.body.style.overflowX = "hidden";
-      } else {
-        document.body.style.overflowX = "";
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  const router = useRouter();
   const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+    const isActive = href === router.pathname;
     return (
-      <Link href={href} className="font-UberMove focus:font-bold">
+      <Link href={href} className={` ${isActive ? 'font-UberMoveBold' : 'font-UberMoveRegular'}`}>
         {children}
       </Link>
     );
@@ -42,9 +31,8 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`flex fixed items-center w-full justify-between px-4 bg-white ${
-        isFloating ? "floating" : ""
-      }`}
+      className={`flex  z-50 items-center w-full justify-between  px-4 bg-white ${isFloating ? "floating" : ""
+        }`}
     >
       <div className="flex items-center">
         <div className="flex items-center">
@@ -58,7 +46,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="hidden md:flex gap-5 ml-16">
-          <NavLink href="#">Home</NavLink>
+          <NavLink href="/">Home</NavLink>
           <NavLink href="#">Explore Features</NavLink>
           <NavLink href="#">Understand TranXIT</NavLink>
           <NavLink href="#">About</NavLink>
@@ -67,16 +55,19 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center gap-3">
         <NavLink href="#">FAQs</NavLink>
         <NavLink href="#">Help Center</NavLink>
-        <div className="border p-3 rounded-lg">
-          <Image src={support} alt="Support" width={24} height={24} />
+
+        <div className="flex items-center gap-2">
+          <div className="border p-3 rounded-lg">
+            <Image src={support} alt="Support" width={24} height={24} />
+          </div>
+          <button className="flex px-4 py-3 justify-center items-center gap-2 font-UberMoveBold text-base text-black bg-[#EFF0F1] rounded-md border-[#E7E8E4D9]">
+            <Image src={loginIcon} alt="Login" width={24} height={24} />
+            Log In
+          </button>
         </div>
-        <button className="flex px-4 py-2 justify-center items-center gap-3 font-bold text-base text-black bg-[#EFF0F1] rounded-md border-[#E7E8E4D9]">
-          <Image src={loginIcon} alt="Login" width={24} height={24} />
-          Log In
-        </button>
       </div>
     </nav>
   );

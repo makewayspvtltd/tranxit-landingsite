@@ -12,7 +12,7 @@ import Play from "./Assets/play.svg"
 import DynamicAccordion from '../Accordion/Accordion-component'
 function FaqSection() {
     return (
-        <div className='pt-[8.25rem] pb-[6.125rem]'>
+        <div className='pt-[8.25rem] pb-[6.125rem] h-full'>
             <div className='flex'>
                 <div className='basis-[50%] bg-white  py-24 overflow-hidden'>
                     <Image src={Faq} alt="faq" className='w-[100%] scale-110 ' />
@@ -28,7 +28,7 @@ function FaqSection() {
                         </span>
                     </div>
 
-                    <h3 className='font-bold text-[38px] pt-[1rem]'>
+                    <h3 className='font-bold font-dm-sans text-[38px] pt-[1rem]'>
                         Frequently asked questions
                     </h3>
                     <div className='pt-8'>
@@ -45,17 +45,17 @@ function FaqSection() {
             </div>
 
 
-            <div className='flex pt-20 px-[19.25rem]   '>
+            <div className='flex pt-20 px-[19.25rem] gap-[130px]  '>
 
-                <div >
-                    <span className='font-Avenir font-medium text-[13px] text-[#11111080]'>
+                <div className='max-w-[520px] ' >
+                    <span className='font-AvenirRoman font-medium text-[13px] text-[#11111080]'>
                         OUR USERS BASE
                     </span>
 
 
                     <div className='flex items-center gap-3 font-Avenir font-normal text-[18px]'>
 
-                        <h3 className='font-bold font-UberMoveBold  text-[38px] '>
+                        <h3 className=' font-UberMoveBold  text-[38px] '>
                             Industry-leading partners in courier & logistics solutions.
                         </h3>
                     </div>
@@ -67,7 +67,7 @@ function FaqSection() {
                 <div className='flex  flex-col  gap-12 pl-[2rem] '>
 
                     <div>
-                        <span className='font-Avenir font-normal text-[18px] '>
+                        <span className='font-AvenirRoman  font-normal text-[18px] '>
                             Discover the industry-leading courier and logistics companies partnering with TranXIT for seamless shipping solutions.
                         </span>
                     </div>
@@ -75,34 +75,34 @@ function FaqSection() {
                         <div className='flex flex-col  h-[85px] justify-between'>
                             <Image src={Dhl} height={12} width={90} alt="faq" className='grayscale' />
 
-                            <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
+                            <span className='font-AvenirRoman  font-normal text-[18px] whitespace-nowrap '>
                                 DHL Logistics & Courier </span>
                         </div>
 
                         <div className='flex flex-col h-[85px] justify-between'>
                             <Image src={Fedex} height={18} width={68} alt="faq" className='grayscale' />
 
-                            <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
+                            <span className='font-AvenirRoman  font-normal text-[18px] whitespace-nowrap '>
                                 FedEx Express </span>
                         </div>
 
                         <div className='flex flex-col h-[85px] justify-between'>
                             <Image src={leopard} height={18} width={102.38} alt="faq" className='grayscale' />
 
-                            <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
+                            <span className='font-AvenirRoman  font-normal text-[18px] whitespace-nowrap '>
                                 Leopard Courier </span>
                         </div>
                         <div className='flex flex-col h-[85px] justify-between justify-self-start'>
                             <Image src={Tcs} height={29.89} width={76} alt="faq" className='grayscale' />
 
-                            <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
+                            <span className='font-AvenirRoman  font-normal text-[18px] whitespace-nowrap '>
                                 TCS Pakistan </span>
                         </div>
 
                         <div className='flex flex-col h-[85px] justify-between'>
                             <Image src={Trax} height={28} width={129} alt="faq" className='grayscale' />
 
-                            <span className='font-Avenir font-normal text-[18px] whitespace-nowrap '>
+                            <span className='font-AvenirRoman  font-normal text-[18px] whitespace-nowrap '>
                                 Trax </span>
                         </div>
                     </div>

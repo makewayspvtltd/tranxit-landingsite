@@ -54,18 +54,18 @@ function DescriptionSection() {
   return (
     <div className="relative">
       <div className="absolute inset-0 flex items-center justify-center ">
-        <Image src={circle} alt="circle" width={1770} />
+        <Image src={circle} alt="circle" width={2000} />
       </div>
       <motion.div
         ref={sectionRef}
-        className="py-[90px] px-[54px] relative h-screen"
+        className="px-[54px] relative h-screen"
         initial={{ opacity: 0, y: -100 }}
         animate={controls}
         transition={{ delay: 0.3, duration: 0.3 }}
       >
         <div className="flex items-center justify-center h-full">
           <div className="max-w-[1487px]  pt-10">
-            <h3 className="font-UberMove font-semibold text-center text-xs sm:text-2xl md:text-3xl lg:text-6xl xl:text-[3.8125rem] ">
+            <h3 className="font-UberMoveMedium text-center text-xs sm:text-2xl md:text-3xl lg:text-6xl xl:text-[3.8125rem] ">
               <span className="text-[#111110]">
                 TranXIT is a comprehensive digital platform{" "}
               </span>
