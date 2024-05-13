@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Main from "@/components/Main/Main";
 import DescriptionSection from "@/components/DescriptionSection/DescriptionSection";
@@ -13,7 +13,7 @@ export default function Home() {
   const [snapScroll, setSnapScroll] = React.useState(true);
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  console.log(snapScroll)
+  console.log(snapScroll);
   function getOffsetTop(element: HTMLElement) {
     let offsetTop = 0;
     while (element) {
@@ -34,13 +34,14 @@ export default function Home() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [setSnapScroll]);
 
   return (
-    <div className={`container ${snapScroll ? 'h-screen' : 'h-auto'}`}>
+    <div>
+
       <motion.div className="snap-section">
         <Main />
       </motion.div>
