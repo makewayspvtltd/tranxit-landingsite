@@ -6,6 +6,11 @@ import Arrow from "./Assets/arrow.svg"
 import diamondRing from "./Assets/small-diamond.svg"
 import logo from "./Assets/logo.png"
 function FooterSection() {
+
+    const registerHandler
+        = () => {
+            window.location.href = 'https://app.tranxit.io/onboarding';
+        }
     return (
         <div className='relative h-full'>
             <div className='overflow-hidden relative h-[600px]'>
@@ -60,7 +65,7 @@ function FooterSection() {
 
 
                     <div>
-                        <button className=' py-[18px]  bg-Primary  rounded-[9px] px-[52px] font-UberMoveBold font-bold text-[18px] flex gap-5 items-center'>
+                        <button onClick={registerHandler} className=' py-[18px]  bg-Primary  rounded-[9px] px-[52px] font-UberMoveBold font-bold text-[18px] flex gap-5 items-center'>
                             <Image src={Arrow} alt='arrow' width={27} height={27} />               <span>
                                 Register Account
                             </span>

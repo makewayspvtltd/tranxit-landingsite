@@ -29,6 +29,10 @@ const Navbar: React.FC<NavbarProps> = ({ isFloating }) => {
     );
   };
 
+  const loginHandler = () => {
+    window.location.href = 'https://app.tranxit.io';
+  }
+
   return (
     <nav
       className={`flex  z-50 items-center w-full justify-between  px-4 bg-white ${isFloating ? "floating" : ""
@@ -63,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ isFloating }) => {
           <div className="border p-3 rounded-lg">
             <Image src={support} alt="Support" width={24} height={24} />
           </div>
-          <button className="flex px-4 py-3 justify-center items-center gap-2 font-UberMoveBold text-base text-black bg-[#EFF0F1] rounded-md border-[#E7E8E4D9]">
+          <button onClick={loginHandler} className="flex px-4 py-3 justify-center items-center gap-2 font-UberMoveBold text-base text-black bg-[#EFF0F1] rounded-md border-[#E7E8E4D9]">
             <Image src={loginIcon} alt="Login" width={24} height={24} />
             Log In
           </button>
