@@ -25,6 +25,13 @@ function Main() {
     };
   }, [mainRef]);
 
+  const requestHandler = () => { 
+    window.location.href = 'https://app.tranxit.io/';
+   }
+  const companyHandler = () => { 
+    window.location.href = 'https://app.tranxit.io/';
+   }
+
   return (
     < div className='h-screen' ref={mainRef}>
       <Navbar isFloating={isFloating} />
@@ -55,11 +62,11 @@ function Main() {
               Your ultimate logistics and freight management solution. Streamline operations, optimize routes, and track shipments in real-time with our comprehensive platform. Sign up now for seamless logistics management, absolutely free!
             </div>
             <div className="flex flex-col lg:flex-row gap-3 mt-11">
-              <button className="flex items-center gap-[18px] justify-center rounded-lg bg-Primary py-[18px] px-[52px] font-UberMoveBold text-lg leading-7 whitespace-nowrap">
+              <button onClick={requestHandler} className="flex items-center gap-[18px] justify-center rounded-lg bg-Primary py-[18px] px-[52px] font-UberMoveBold text-lg leading-7 whitespace-nowrap hover:opacity-75">
                 <Image src="/arrowleft.svg" alt="arrow" width={27} height={27} />
                 Request A Delivery
               </button>
-              <button className="flex items-center gap-[18px] justify-center rounded-lg border whitespace-nowrap border-Primary bg-transparent py-[18px] px-[52px] font-UberMoveBold text-lg leading-7">
+              <button onClick={companyHandler} className="flex items-center gap-[18px] justify-center rounded-lg border whitespace-nowrap border-Primary bg-transparent py-[18px] px-[52px] font-UberMoveBold text-lg leading-7 hover:opacity-70">
                 <Image src="/peoplecompany.svg" alt="arrow" width={27} height={27} />
                 Own a Company?
               </button>
